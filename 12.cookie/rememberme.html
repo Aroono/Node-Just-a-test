@@ -8,18 +8,18 @@
             document.cookie = key+"="+value;
         }
         function getCookie(key){
-           if(document.cookie){
-               var parts = document.cookie.split('; ');
-               for(var i=0;i<parts.length;i++){
+            if(document.cookie){
+                var parts = document.cookie.split('; ');
+                for(var i=0;i<parts.length;i++){
                    var vals = parts[i].split('=');
                    if(vals[0]==key){
                        return vals[1];
                    }
-               }
-               return "";
-           }else{
-               return "";
-           }
+                }
+                return "";
+            }else{
+                return "";
+            }
         }
         function checkCookie(){
             var username = getCookie('username');
